@@ -4,6 +4,44 @@
 
 /*---------- common style 
 --------------------------*/
+#logo{
+    font-size: 24px;
+    width: 700;
+    margin-left: 120px;
+}
 body{
     font-family: 'Poppins', sans-serif;
+}
+.containers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin:0px 120px;
+}
+
+/*---------- Top Banner 
+---------------------------*/
+.container h1{
+    font-size: 45px;
+    width: 700;
+}
+.container a{
+    text-decoration: none;
+    background-color: #eb4a00;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 20px;
+}
+.container img{
+    width: 80%;
+}
+
+/*---------- Products 
+---------------------------*/
+.product img{
+    width: ;
+}
+.product-titel{
+    font-size: 24px;
+    width: 500;
 }
