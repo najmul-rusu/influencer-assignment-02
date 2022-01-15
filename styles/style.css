@@ -48,7 +48,11 @@ hr{
     color: #ffffff;
 }
 .banner-part img{
-    width: 80%;
+    width: 75%;
+}
+.banner-part img:hover{
+    transform: scale(1.2);
+    transition: transform 3s;
 }
 
 /*---------- Sponsor 
