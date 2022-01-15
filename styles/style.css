@@ -209,6 +209,9 @@ footer{
         flex-direction:column-reverse;
         text-align: center;
     }
+    .banner-part{
+        width: 100%;
+    }
     .top-banner img{
         width: 50%;
         padding-top: 20px;
