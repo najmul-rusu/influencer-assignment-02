@@ -204,14 +204,14 @@ footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    #logo{
-
+    .container{
+        width: 100%;
         text-align: center;
     }
     nav{
         display: none;
     }
-    .fas{
+    .header-icon{
         display: none;
     }
     section{
@@ -253,14 +253,14 @@ footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    #logo{
-
+    .container{
+        width: 100%;
         text-align: center;
     }
     nav{
         display: none;
     }
-    .fas{
+    .header-icon{
         display: none;
     }
     section{
