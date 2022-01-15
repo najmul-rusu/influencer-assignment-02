@@ -78,8 +78,13 @@ hr{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px
 }
-.product img{
+.product-image{
     width: 100%;
+    overflow: hidden;
+}
+.product-image img:hover{
+    transform: scale(1.2);
+     transition: transform 2s;
 }
 .product-titel{
     font-size: 24px;
