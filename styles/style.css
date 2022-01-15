@@ -41,10 +41,10 @@ header{
         color: #000000;
         padding: 5px;
     }
-    .fas{
-        padding: 10px;
+    .header-icon, fas{
+        padding: 10px
     }
-
+    
 
 /*---------- Top Banner 
 ---------------------------*/
