@@ -11,37 +11,220 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
 }
-.containers{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    margin:0px 120px;
+section{
+    margin: 50px 100px;
+}
+.section-titel{
+    text-align: center;
+}
+hr{
+    border: 1px solid #dadada;
 }
 
 /*---------- Top Banner 
 ---------------------------*/
-.container h1{
+.top-banner{
+    display: flex;
+}
+.banner-part{
+    width: 50%;
+}
+.banner-part h1{
     font-size: 45px;
     width: 700;
 }
-.container a{
+.banner-part a{
     text-decoration: none;
     background-color: #eb4a00;
     color: #ffffff;
     padding: 10px 24px;
     border-radius: 20px;
 }
-.container img{
+.banner-part img{
     width: 80%;
+}
+
+/*---------- Sponsor 
+---------------------------*/
+.sponsor{
+    display: flex;
+    justify-content: space-around;
+}
+.sponsor img{
+    width: 100px;
+    height: 75px;
 }
 
 /*---------- Products 
 ---------------------------*/
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.product{
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px
+}
 .product img{
-    width: ;
+    width: 100%;
 }
 .product-titel{
     font-size: 24px;
     width: 500;
+}
+.rating{
+    color: #FB8200;
+    font-size: 11px;
+}
+.rating-digit{
+    color: #5E6366;
+}
+.product strong{
+    color: #787885;
+}
+.see-more{
+    text-decoration: none;
+    color: #eb4a00;
+    float: right;
+    padding-top: 15px;
+}
+/*---------- Newsletter 
+---------------------------*/
+form {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.form-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+} 
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+} 
+input[type=checkbox] {
+    margin-top: 16px;
+}  
+input[type=submit] {
+    background-color: #eb4a00;
+    color: white;
+    border: none;
+}  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+input[type=text], input[type=submit] {
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=checkbox] {
+    margin-top: 16px;
+}
+input[type=submit] {
+    background-color: #eb4a00;
+    color: white;
+    border: none;
+  }
+input[type=submit]:hover {
+ opacity: 0.8;
+}
+
+/*---------- Footer 
+---------------------------*/
+footer{
+    text-align: center;
+    color: #ffffff;
+    background-color: #161616;
+    padding: 50px;
+}  
+.fab{
+    padding: 5px;
+}
+
+/*--------- media queries
+---------------------------- */
+
+/*--------- mobile devices 
+-------------------------------*/
+@media only screen and (max-width:688px) {
+    #logo{
+        margin: 0px;
+        text-align: center;
+    }
+    section{
+        margin: 0px;
+        padding: 10px;
+    }
+    .top-banner{
+        display: flex;
+        flex-direction:column-reverse;
+        text-align: center;
+    }
+    .banner-part{
+        width: 100%;
+    }    
+    .top-banner img{
+        padding-top: 20px;
+    }
+    .sponsor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sponsor img{
+        width: 75px;
+        height: 50px;
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    form{
+        margin-top: 50px;
+    }
+}
+
+/*--------- tablet devices 
+------------------------------*/
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    #logo{
+        margin: 0px;
+        text-align: center;
+    }
+    section{
+        margin: 0px;
+        padding: 30px;
+    }
+    .top-banner{
+        display: flex;
+        flex-direction:column-reverse;
+        text-align: center;
+    }
+    .top-banner img{
+        width: 50%;
+        padding-top: 20px;
+    }
+    .sponsor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sponsor img{
+        width: 75px;
+        height: 50px;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    form{
+        margin-top: 50px;
+    }
 }
