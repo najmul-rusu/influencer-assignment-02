@@ -12,6 +12,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+    background-color: #f7f3f4;
 }
 section{
     margin: 50px 100px;
@@ -35,12 +36,16 @@ hr{
     font-size: 45px;
     width: 700;
 }
-.banner-part a{
+.button{
     text-decoration: none;
     background-color: #eb4a00;
     color: #ffffff;
     padding: 10px 24px;
     border-radius: 20px;
+}
+.button:hover{
+    background-color: #bb3200;
+    color: #ffffff;
 }
 .banner-part img{
     width: 80%;
