@@ -7,8 +7,9 @@
 #logo{
     font-size: 24px;
     width: 700;
-    margin-left: 120px;
+
 }
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -23,6 +24,27 @@ section{
 hr{
     border: 1px solid #dadada;
 }
+
+/*---------- Header 
+---------------------------*/
+header{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: end;
+    }
+    .container{
+        margin-left: 100px;
+    }
+    nav a{
+        text-decoration: none;
+        color: #000000;
+        padding: 5px;
+    }
+    .fas{
+        padding: 10px;
+    }
+
 
 /*---------- Top Banner 
 ---------------------------*/
@@ -55,7 +77,7 @@ hr{
         transition: transform 3s; 
     }
 
-    
+
 /*---------- Sponsor 
 ---------------------------*/
 .sponsor{
@@ -178,9 +200,19 @@ footer{
 /*--------- mobile devices 
 -------------------------------*/
 @media only screen and (max-width:688px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
     #logo{
-        margin: 0px;
+
         text-align: center;
+    }
+    nav{
+        display: none;
+    }
+    .fas{
+        display: none;
     }
     section{
         margin: 0px;
@@ -217,9 +249,19 @@ footer{
 ------------------------------*/
 
 @media only screen and (min-width:688px) and (max-width:992px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
     #logo{
-        margin: 0px;
+
         text-align: center;
+    }
+    nav{
+        display: none;
+    }
+    .fas{
+        display: none;
     }
     section{
         margin: 0px;
