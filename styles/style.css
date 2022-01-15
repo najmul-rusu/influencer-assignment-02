@@ -52,10 +52,10 @@ hr{
     }
     .banner-part img:hover{
         transform: scale(1.2);
-        transition: transform 3s;
+        transition: transform 3s; 
     }
-}
 
+    
 /*---------- Sponsor 
 ---------------------------*/
 .sponsor{
@@ -66,7 +66,7 @@ hr{
         width: 100px;
         height: 75px;
     }
-}
+
 
 /*---------- Products 
 ---------------------------*/
@@ -108,12 +108,13 @@ hr{
         float: right;
         padding-top: 15px;
     }
-}
+
+
 
 /*---------- Newsletter 
 ---------------------------*/
 form {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
     .form-container {
         padding: 20px;
@@ -156,20 +157,20 @@ form {
     input[type=submit]:hover {
     opacity: 0.8;
     }
-}
+
 
 /*---------- Footer 
 ---------------------------*/
 footer{
-        text-align: center;
-        color: #ffffff;
-        background-color: #161616;
-        padding: 50px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #161616;
+    padding: 50px;
     }  
     .fab{
         padding: 5px;
     }
-}
+
 
 /*--------- media queries
 ---------------------------- */
